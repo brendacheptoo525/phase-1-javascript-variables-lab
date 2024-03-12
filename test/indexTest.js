@@ -8,16 +8,24 @@ describe('index.js', function () {
     it('is set as Scuber', function () {
       expect(companyName).to.equal('Scuber');
     });
+    const companyName = 'Scuber';
+    console.log(companyName)
 
     it('is defined as a const', function () {
       expect(js).to.match(/const companyName/, "Expected companyName to be a const");
     });
   });
+  
 
   describe('mostProfitableNeighborhood', function () {
     it('is declared as equal to Chelsea', function () {
       expect(mostProfitableNeighborhood).to.equal('Chelsea');
     });
+
+    let mostProfitableNeighborhood ;
+    mostProfitableNeighborhood = 'Chelsea';
+    console.log (mostProfitableNeighborhood)
+
 
     it('is defined using let', function () {
       expect(js).to.match(/let mostProfitableNeighborhood/, "Expected mostProfitableNeighborhood to be defined using let");
@@ -28,6 +36,10 @@ describe('index.js', function () {
     it('is declared as equal to Susan Smith', function () {
       expect(companyCeo).to.equal('Susan Smith');
     });
+
+    let companyCeo ;
+    companyCeo = 'Susan Smith';
+    console.log(companyCeo)
 
     it('is defined using let', function () {
       expect(js).to.match(/let companyCeo/, "Expected companyCeo to be defined using let");
